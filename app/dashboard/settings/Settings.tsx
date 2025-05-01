@@ -275,19 +275,33 @@ export default function Settings() {
 
   useEffect(() => {
     const language = Cookies.get("language")
-    if (language === "en") {
-      setLanguage("english")
-    } else if (language === "de") {
-      setLanguage("german")
+    switch (language) {
+      case "de":
+        setLanguage("german")
+        break;
+      case "es":
+        setLanguage("spanish")
+        break;
+      case "en":
+      default:
+        setLanguage("english")
+        break;
     }
   }, [])
 
   const setLanguageFunc = (value: string) => {
     setLanguage(value)
-    if (value === "english") {
-      Cookies.set("language", "en")
-    } else if (value === "german") {
-      Cookies.set("language", "de")
+    switch (value) {
+      case "german":
+        Cookies.set("language", "de")
+        break;
+      case "spanish":
+        Cookies.set("language", "es")
+        break;
+      case "english":
+      default:
+        Cookies.set("language", "en")
+        break;
     }
     // Reload the page
     window.location.reload()
@@ -468,6 +482,7 @@ export default function Settings() {
                     <SelectContent>
                       <SelectItem value="english">{t('Settings.LanguageSettings.English')}</SelectItem>
                       <SelectItem value="german">{t('Settings.LanguageSettings.German')}</SelectItem>
+                      <SelectItem value="spanish">{t('Settings.LanguageSettings.Spanish')}</SelectItem>
                     </SelectContent>
                   </Select>
                 </div>
@@ -653,8 +668,8 @@ export default function Settings() {
                                       type="text"
                                       onChange={(e) => setNtfyToken(e.target.value)}
                                     />
-                                  </div>                                
-                                </div>  
+                                  </div>
+                                </div>
                               </div>
                             )}
 
@@ -699,7 +714,7 @@ export default function Settings() {
                                <span className="text-xs text-muted-foreground">{t('Settings.Notifications.AddNotification.Echobell.AddMessage')}</span>
                               </div>
                             )}
-                            
+
                           </Select>
                         </div>
                       </AlertDialogDescription>
@@ -810,7 +825,7 @@ export default function Settings() {
                             )}
                             <div className="space-y-1">
                               <h3 className="font-medium capitalize">
-                                {notification.name || 
+                                {notification.name ||
                                   t(`Settings.Notifications.AddNotification.${notification.type.charAt(0).toUpperCase() + notification.type.slice(1)}.Title`)}
                               </h3>
                               <p className="text-xs text-muted-foreground">

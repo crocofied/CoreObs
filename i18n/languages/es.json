@@ -1,0 +1,424 @@
+{
+    "Common": {
+        "ChangeView": "Cambiar Vista",
+        "ListView": "Vista de Lista",
+        "GridView": "Vista de Cuadrícula",
+        "optional": "opcional",
+        "cancel": "Cancelar",
+        "add": "Añadir",
+        "since": "desde {date}",
+        "notSet": "No establecido",
+        "noData": "Sin datos",
+        "Loading": "Cargando...",
+        "Refresh": "Refrescar",
+        "Save": "Guardar",
+        "Server": {
+            "CPU": "CPU",
+            "GPU": "GPU",
+            "RAM": "RAM",
+            "Disk": "Disco",
+            "OS": "SO",
+            "IP": "IP",
+            "Host": "Host",
+            "Temperature": "Temperatura",
+            "Usage": "Uso",
+            "Tabs": {
+                "General": "General",
+                "Hardware": "Hardware",
+                "Host": "Host",
+                "Monitoring": "Monitoreo"
+            }
+        },
+        "ItemsPerPage": {
+            "items": "elementos",
+            "item": "elemento",
+            "4": "4 elementos",
+            "5": "5 elementos",
+            "6": "6 elementos",
+            "10": "10 elementos",
+            "15": "15 elementos",
+            "20": "20 elementos",
+            "25": "25 elementos",
+            "Custom": "Personalizado (1-100)"
+        }
+    },
+    "Server": {
+        "Hardware": "Hardware",
+        "Network": "Red",
+        "CurrentUsage": "Uso Actual",
+        "UsageHistory": "Historial de Uso",
+        "ResourceUsageHistory": "Historial de Uso de Recursos",
+        "TimeRange": {
+            "Select": "Seleccionar rango de tiempo",
+            "LastHour": "Última Hora",
+            "Last24Hours": "Últimas 24 Horas",
+            "Last7Days": "Últimos 7 Días",
+            "Last30Days": "Últimos 30 Días"
+        },
+        "VirtualMachines": "Máquinas Virtuales",
+        "VirtualMachinesDescription": "Máquinas virtuales alojadas en este servidor",
+        "HardwareInformation": "Información del Hardware",
+        "ManagementURL": "URL de Administración",
+        "VM": "VM",
+        "Physical": "Físico",
+        "HostedOn": "Alojado en",
+        "NotFound": "Servidor no encontrado",
+        "NotFoundDescription": "El servidor que estás buscando no se pudo encontrar."
+    },
+    "Sidebar": {
+        "Main Navigation": "Navegación Principal",
+        "Dashboard": "Panel de Control",
+        "My Infrastructure": "Mi Infraestructura",
+        "Servers": "Servidores",
+        "Applications": "Aplicaciones",
+        "Uptime": "Uptime",
+        "Network": "Red",
+        "Settings": "Ajustes",
+        "Logout": "Cerrar Sesión"
+    },
+    "Home": {
+        "TitleUnder": "Panel de control para gestionar toda tu infraestructura de servidores",
+        "LoginCardTitle": "Iniciar Sesión",
+        "LoginCardDescription": "Introduce tus credenciales para continuar",
+        "AuthenticationError": "Error de Autenticación",
+        "Email": "Correo Electrónico",
+        "Password": "Contraseña",
+        "SigninButton": "Iniciar Sesión",
+        "SigninButtonSigningIn": "Iniciando sesión..."
+    },
+    "Dashboard": {
+        "Title": "Panel de Control",
+        "Servers": {
+            "Title": "Servidores",
+            "Description": "Descripción general de servidores físicos y virtuales",
+            "PhysicalServers": "Servidores Físicos",
+            "VirtualServers": "Servidores Virtuales",
+            "ManageServers": "Gestionar Servidores"
+        },
+        "Applications": {
+            "Title": "Aplicaciones",
+            "Description": "Gestiona tus aplicaciones desplegadas",
+            "OnlineApplications": "Aplicaciones En Línea",
+            "ViewAllApplications": "Ver todas las aplicaciones"
+        },
+        "Uptime": {
+            "Title": "Uptime",
+            "Description": "Monitoriza la disponibilidad de tus servicios",
+            "OnlineApplications": "Aplicaciones En Línea",
+            "ViewUptimeMetrics": "Ver métricas de uptime"
+        },
+        "Network": {
+            "Title": "Red",
+            "Description": "Gestionar la configuración de red",
+            "ActiveConnections": "Conexiones Activas",
+            "ViewNetworkDetails": "Ver detalles de la red"
+        }
+    },
+    "Servers": {
+        "Title": "Servidores",
+        "MyInfrastructure": "Mi Infraestructura",
+        "YourServers": "Tus Servidores",
+        "AddServer": {
+            "Title": "Añadir un servidor",
+            "General": {
+                "Title": "Añadir un servidor",
+                "CopyServer": "Copiar servidor",
+                "Icon": "Icono",
+                "IconPlaceholder": "Seleccionar un icono",
+                "IconSearchPlaceholder": "Buscar iconos...",
+                "Preview": "Previsualizar",
+                "Name": "Nombre",
+                "OperatingSystem": "Sistema Operativo",
+                "OperatingSystemPlaceholder": "Seleccionar SO",
+                "IPAdress": "Dirección IP",
+                "ManagementURL": "URL de Administración",
+                "ManagementURLTooltip": "Enlace a una interfaz web (ej. Proxmox o Portainer) con la que se puede administrar el servidor"
+            },
+            "Host": {
+                "MarkAsHostServer": "Marcar como servidor anfitrión",
+                "SelectHostServer": "Seleccionar un servidor anfitrión",
+                "SelectHostServerPlaceholder": "Seleccionar un servidor anfitrión",
+                "NoHostServer": "Sin servidor anfitrión"
+            },
+            "Monitoring": {
+                "Enable": "Activar la monitorización",
+                "URL": "URL de Monitorización",
+                "SetupTitle": "Configuración Requerida del Servidor",
+                "SetupDescription": "Para habilitar la monitorización, necesitas instalar Glances en tu servidor. Aquí tienes un ejemplo de configuración de Docker Compose:"
+            }
+        },
+        "ServerCard": {
+            "HardwareInformation": "Información del Hardware",
+            "ViewDetails": "Ver Detalles",
+            "OpenManagementURL": "Abrir URL de Administración",
+            "EditServer": "Editar Servidor",
+            "DeleteServer": "Eliminar Servidor",
+            "HostedVMs": "VMs Alojadas",
+            "ResourceUsage": "Uso de Recursos",
+            "DeleteConfirmation": {
+                "Title": "Eliminar {name}",
+                "Description": "¿Estás seguro de que quieres eliminar este servidor? Esta acción no se puede deshacer.",
+                "Cancel": "Cancelar",
+                "Delete": "Eliminar"
+            }
+        },
+        "EditServer": {
+            "Title": "Editar {name}",
+            "Save": "Guardar",
+            "General": {
+                "Title": "General",
+                "Icon": "Icono",
+                "Name": "Nombre",
+                "OperatingSystem": "Sistema Operativo",
+                "IPAddress": "Dirección IP",
+                "ManagementURL": "URL de Administración"
+            },
+            "Hardware": {
+                "Title": "Hardware",
+                "CPU": "CPU",
+                "GPU": "GPU",
+                "RAM": "RAM",
+                "Disk": "Disco"
+            },
+            "Host": {
+                "Title": "Anfitrión",
+                "MarkAsHostServer": "Marcar como servidor anfitrión",
+                "CannotDisableHost": "No se puede desactivar mientras aloja VMs",
+                "SelectHostServer": "Seleccionar un servidor anfitrión"
+            },
+            "Monitoring": {
+                "Title": "Monitoreo",
+                "Enable": "Activar el monitoreo",
+                "URL": "URL de Monitoreo",
+                "SetupTitle": "Configuración Requerida del Servidor",
+                "SetupDescription": "Para habilitar el monitoreo, necesitas instalar Glances en tu servidor. Aquí tienes un ejemplo de configuración de Docker Compose:"
+            }
+        },
+        "Pagination": {
+            "Showing": "Mostrando {start}-{end} de {total} servidores",
+            "NoServers": "No se encontraron servidores"
+        },
+        "Search": {
+            "Placeholder": "Escribe para buscar..."
+        }
+    },
+    "Applications": {
+        "Title": "Tus Aplicaciones",
+        "Breadcrumb": {
+            "MyInfrastructure": "Mi Infraestructura",
+            "Applications": "Aplicaciones"
+        },
+        "Views": {
+            "ChangeView": "Cambiar vista",
+            "ListView": "Vista de Lista",
+            "GridView": "Vista de Cuadrícula",
+            "CompactView": "Vista Compacta"
+        },
+        "Add": {
+            "Title": "Añadir una aplicación",
+            "Name": "Nombre",
+            "NamePlaceholder": "ej. Portainer",
+            "Server": "Servidor",
+            "SelectServer": "Seleccionar servidor",
+            "Description": "Descripción",
+            "DescriptionPlaceholder": "Descripción de la aplicación",
+            "IconURL": "URL del Icono",
+            "IconURLPlaceholder": "https://example.com/icon.png",
+            "PublicURL": "URL Pública",
+            "PublicURLPlaceholder": "https://example.com",
+            "LocalURL": "URL Local",
+            "LocalURLPlaceholder": "http://localhost:3000",
+            "CustomUptimeCheck": "URL Personalizada de Comprobación de Actividad",
+            "CustomUptimeCheckTooltip": "Cuando está activado, esta URL reemplaza la URL Pública para las comprobaciones de monitoreo de actividad",
+            "UptimeCheckURL": "URL de Comprobación de Actividad",
+            "UptimeCheckURLPlaceholder": "https://example.com/status"
+        },
+        "Edit": {
+            "Title": "Editar Aplicación",
+            "SaveButton": "Guardar Cambios"
+        },
+        "Card": {
+            "Server": "Servidor",
+            "NoServer": "Sin servidor",
+            "PublicURL": "URL Pública",
+            "LocalURL": "URL Local",
+            "Icon": "Icono",
+            "Image": "Imagen"
+        },
+        "Messages": {
+            "AddServerFirst": "Primero debes añadir un servidor.",
+            "AddSuccess": "Aplicación añadida correctamente",
+            "EditSuccess": "Aplicación editada correctamente",
+            "DeleteSuccess": "Aplicación eliminada correctamente",
+            "GetError": "Error al obtener las aplicaciones",
+            "EditError": "Error al editar la aplicación",
+            "DeleteError": "Error al eliminar la aplicación",
+            "NumberValidation": "Por favor, introduce un número entre 1 y 100"
+        },
+        "Pagination": {
+            "Showing": "Mostrando {start}-{end} de {total} aplicaciones",
+            "NoApplications": "No se encontraron aplicaciones"
+        },
+        "Search": {
+            "Placeholder": "Escribe para buscar..."
+        }
+    },
+    "Uptime": {
+        "Title": "Tiempo de Actividad",
+        "Breadcrumb": {
+            "MyInfrastructure": "Mi Infraestructura",
+            "Uptime": "Tiempo de Actividad"
+        },
+        "TimeRange": {
+            "Select": "Seleccionar periodo de tiempo",
+            "LastHour": "Última 1 hora",
+            "LastDay": "Último 1 día",
+            "Last7Days": "Últimos 7 días",
+            "Last30Days": "Últimos 30 días"
+        },
+        "Status": {
+            "Online": "En Línea",
+            "Offline": "Fuera de Línea",
+            "NoData": "Sin datos"
+        },
+        "Messages": {
+            "NumberValidation": "Por favor, introduce un número entre 1 y 100",
+            "NoItems": "No se encontraron elementos",
+            "Loading": "Cargando..."
+        },
+        "Pagination": {
+            "Showing": "Mostrando {start}-{end} de {total} elementos"
+        }
+    },
+    "Network": {
+        "Title": "Red",
+        "Breadcrumb": {
+            "MyInfrastructure": "Mi Infraestructura",
+            "Network": "Red"
+        }
+    },
+    "Settings": {
+        "Title": "Ajustes",
+        "Breadcrumb": {
+            "Dashboard": "Panel de Control",
+            "Settings": "Ajustes"
+        },
+        "UserSettings": {
+            "Title": "Ajustes de Usuario",
+            "Description": "Gestiona aquí tus ajustes de usuario. Puedes cambiar tu correo electrónico, contraseña y otros ajustes de cuenta.",
+            "ChangeEmail": {
+                "Title": "Cambiar Correo Electrónico",
+                "Placeholder": "Introduce nuevo correo electrónico",
+                "Button": "Cambiar Correo Electrónico",
+                "Success": "Correo electrónico cambiado correctamente.",
+                "Error": "Error"
+            },
+            "ChangePassword": {
+                "Title": "Cambiar Contraseña",
+                "OldPassword": "Introduce la contraseña antigua",
+                "NewPassword": "Introduce la nueva contraseña",
+                "ConfirmPassword": "Confirma la nueva contraseña",
+                "Button": "Cambiar Contraseña",
+                "Success": "Contraseña cambiada correctamente.",
+                "Error": "Error",
+                "PasswordsDontMatch": "Las contraseñas no coinciden",
+                "AllFieldsRequired": "Todos los campos son obligatorios"
+            }
+        },
+        "ThemeSettings": {
+            "Title": "Ajustes del Tema",
+            "Description": "Selecciona un tema para la aplicación. Puedes elegir entre tema claro, oscuro o del sistema.",
+            "Light": "Claro",
+            "Dark": "Oscuro",
+            "System": "Sistema"
+        },
+        "LanguageSettings": {
+            "Title": "Ajustes de Idioma",
+            "Description": "Selecciona un idioma para la aplicación.",
+            "English": "Inglés",
+            "German": "Alemán"
+        },
+        "Notifications": {
+            "Title": "Notificaciones",
+            "Description": "Configura las notificaciones para recibir alertas instantáneas cuando una aplicación cambie de estado.",
+            "AddChannel": "Añadir Canal de Notificación",
+            "NoNotifications": "No hay notificaciones configuradas",
+            "NoNotificationsDescription": "Añade un canal de notificación para recibir alertas cuando tus aplicaciones cambien de estado.",
+            "AddNotification": {
+                "Title": "Añadir Notificación",
+                "Name": "Nombre de la Notificación (opcional)",
+                "Type": "Tipo de Notificación",
+                "SMTP": {
+                    "Title": "SMTP",
+                    "Description": "Enviar notificaciones vía SMTP",
+                    "Host": "Servidor SMTP",
+                    "Port": "Puerto SMTP",
+                    "Secure": "Conexión Segura (TLS/SSL)",
+                    "Username": "Nombre de Usuario SMTP",
+                    "Password": "Contraseña SMTP",
+                    "From": "Dirección de Remitente",
+                    "To": "Dirección de Destinatario"
+                },
+                "Telegram": {
+                    "Title": "Telegram",
+                    "Description": "Enviar notificaciones vía Telegram",
+                    "Token": "Token del Bot",
+                    "ChatId": "ID del Chat"
+                },
+                "Discord": {
+                    "Title": "Discord",
+                    "Description": "Enviar notificaciones vía Discord",
+                    "Webhook": "URL del Webhook"
+                },
+                "Gotify": {
+                    "Title": "Gotify",
+                    "Description": "Enviar notificaciones vía Gotify",
+                    "Url": "URL de Gotify",
+                    "Token": "Token de Gotify"
+                },
+                "Ntfy": {
+                    "Title": "Ntfy",
+                    "Description": "Enviar notificaciones vía Ntfy",
+                    "Url": "URL de Ntfy",
+                    "Token": "Token de Ntfy"
+                },
+                "Pushover": {
+                    "Title": "Pushover",
+                    "Description": "Enviar notificaciones vía Pushover",
+                    "Url": "URL de Pushover",
+                    "Token": "Token de Pushover",
+                    "User": "Usuario de Pushover"
+                },
+                "Echobell": {
+                    "Title": "Echobell",
+                    "Description": "Enviar notificaciones vía Echobell",
+                    "Url": "URL de Echobell",
+                    "AddMessage": "Añade en Echobell el campo \"message\"."
+                }
+            },
+            "CustomizeText": {
+                "Display": "Personalizar Texto de Notificación",
+                "Title": "Personalizar Texto de Notificación",
+                "Application": "Texto de Notificación para Aplicaciones",
+                "Server": "Texto de Notificación para Servidores",
+                "Placeholders": {
+                    "Title": "Puedes usar los siguientes marcadores de posición en el texto:",
+                    "Server": {
+                        "Title": "Relacionado con el servidor:",
+                        "Name": "!name - El nombre del servidor",
+                        "Status": "!status - El estado actual del servidor (en línea/fuera de línea)"
+                    },
+                    "Application": {
+                        "Title": "Relacionado con la aplicación:",
+                        "Name": "!name - El nombre de la aplicación",
+                        "Url": "!url - La URL donde está alojada la aplicación",
+                        "Status": "!status - El estado actual de la aplicación (en línea/fuera de línea)"
+                    }
+                }
+            },
+            "ActiveChannels": "Canales de Notificación Activos",
+            "Test": "Probar",
+            "Delete": "Eliminar"
+        }
+    }
+}
