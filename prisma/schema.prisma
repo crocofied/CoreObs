@@ -68,6 +68,11 @@ model server {
   uptime        String?
   gpuUsage      String?
   temp          String?
+  m_cpu         Boolean   @default(true)
+  m_ram         Boolean   @default(true)
+  m_disk        Boolean   @default(true)
+  m_gpu         Boolean   @default(true)
+  m_temp        Boolean   @default(true)
 }
 
 model settings {
