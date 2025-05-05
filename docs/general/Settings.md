@@ -14,7 +14,7 @@ With the theme settings you have the choice between light and dark mode. There i
 ## Language Settings
 ![Language Setting](../assets/screenshots/settings_language.png)
 
-To promote internationalization (also often known as i18n), you can select the language in which you want everything to be displayed within CoreControl. Currently there is the standard language “English”, German and Spanish.
+To promote internationalization (also often known as i18n), you can select the language in which you want everything to be displayed within CoreControl. Currently there is the standard language “English”, German, Spanish and Polish.
 
 ## Notification Settings
 ![Notification Settings](../assets/screenshots/settings_notifications.png)
