@@ -282,6 +282,9 @@ export default function Settings() {
       case "es":
         setLanguage("spanish")
         break;
+      case "pl":
+        setLanguage("polish")
+        break;
       case "en":
       default:
         setLanguage("english")
@@ -297,6 +300,9 @@ export default function Settings() {
         break;
       case "spanish":
         Cookies.set("language", "es")
+        break;
+      case "polish":
+        Cookies.set("language", "pl")
         break;
       case "english":
       default:
@@ -483,6 +489,7 @@ export default function Settings() {
                       <SelectItem value="english">{t('Settings.LanguageSettings.English')}</SelectItem>
                       <SelectItem value="german">{t('Settings.LanguageSettings.German')}</SelectItem>
                       <SelectItem value="spanish">{t('Settings.LanguageSettings.Spanish')}</SelectItem>
+                      <SelectItem value="polish">{t('Settings.LanguageSettings.Polish')}</SelectItem>
                     </SelectContent>
                   </Select>
                 </div>
