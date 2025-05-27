@@ -51,7 +51,17 @@ Settings Page:
 
 ## Deployment
 
-Simply run this compose.yml:
+Simply run this command :
+the command will install all depedencies (like docker,docker compose , pull latest docker images )
+
+```bash
+  sudo sh install.sh
+```
+
+#ToDo : serve it directly like this corecontrol.xyz/install.sh
+
+
+Or Simply run this compose.yml:
 ```yml
 services:
   web:
