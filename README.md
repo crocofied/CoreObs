@@ -1,3 +1,5 @@
+https://discord.gg/gMSgHZDHyy
+
 
 ![Logo](https://i.ibb.co/hwSZTJH/Kopie-von-Cash-Mate.png)
 
