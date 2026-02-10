@@ -1,3 +1,0 @@
-# Network
-
-A network flowchart is automatically generated on this page, which shows the connections of your infrastructure. The main servers are displayed based on the main node “My Infrastrucutre”. Below this are the applications running directly on this server and next to it the VMs running on the server, if it is a host server. To the right of the VMs, all applications running on the respective VM are listed.
