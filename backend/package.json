@@ -16,5 +16,8 @@
     "bun-types": "latest",
     "prisma": "^7.3.0"
   },
-  "module": "src/index.js"
+  "module": "src/index.js",
+  "imports": {
+    "#/*": "./src/*"
+  }
 }
