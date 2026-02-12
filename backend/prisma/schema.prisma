@@ -14,10 +14,60 @@ datasource db {
 }
 
 model User {
+  id            String   @id @default(uuid())
+  email         String   @unique
+  name          String
+  password      String
+  globalRoleId  String
+  globalRole    GlobalRole @relation(fields: [globalRoleId], references: [id], onDelete: Restrict)
+  teamMembers   TeamMember[]
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+}
+
+model Team {
+  id            String   @id @default(uuid())
+  name          String
+  description   String?
+  teamRoles     TeamRole[]
+  members       TeamMember[]
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+}
+
+model TeamMember {
+  id         String   @id @default(uuid())
+  userId     String
+  teamId     String
+  teamRoleId String
+  user       User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  team       Team     @relation(fields: [teamId], references: [id], onDelete: Cascade)
+  teamRole   TeamRole @relation(fields: [teamRoleId], references: [id], onDelete: Restrict)
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+
+  @@unique([userId, teamId])
+}
+
+model GlobalRole {
   id        String   @id @default(uuid())
-  email     String   @unique
-  name      String
-  password  String
+  name      String   @unique
+  description String?
+  isDefault Boolean  @default(false)
+  users     User[]
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
+}
+
+model TeamRole {
+  id        String   @id @default(uuid())
+  teamId    String
+  name      String
+  description String?
+  team      Team     @relation(fields: [teamId], references: [id], onDelete: Cascade)
+  members   TeamMember[]
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@unique([teamId, name])
 }
