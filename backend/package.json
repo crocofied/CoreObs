@@ -2,7 +2,10 @@
   "name": "backend",
   "version": "1.0.50",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "migrate": "prisma migrate deploy",
+    "db:reset": "dotenv -e .env -- prisma migrate reset --force",
+    "seed": "bun run src/utility/seedGlobalRoles.ts",
+    "test": "bun run db:reset && bun run seed && bun test",
     "dev": "bun run --watch src/index.ts"
   },
   "dependencies": {
@@ -14,6 +17,7 @@
   "devDependencies": {
     "@types/pg": "^8.16.0",
     "bun-types": "latest",
+    "dotenv-cli": "^11.0.0",
     "prisma": "^7.3.0"
   },
   "module": "src/index.js",
