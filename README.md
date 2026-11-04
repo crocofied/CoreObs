@@ -53,6 +53,8 @@ Settings Page:
 
 ## Deployment
 
+<a href="https://repocloud.io/details/CoreObs/"><img src="https://d16t0pc4846x52.cloudfront.net/deploylobe.svg" alt="Deploy on RepoCloud" height="42"></a>
+
 Simply run this compose.yml:
 ```yml
 services:
